@@ -836,7 +836,13 @@ public class ActionbarextrasModule extends KrollModule {
 	 * @param Integer -	value
 	 */
 	private void handleSetElevation(Object value){
-		getActionBar().setElevation(TiConvert.toFloat(value));
+		ActionBar actionBar = getActionBar();
+		if(actionBar != null) {
+			actionBar.setElevation(TiConvert.toFloat(value));
+		} else {
+			Log.e(TAG, "handleSetElevation: Action bar is null");
+		}
+		
 	}
 	
 	/**
