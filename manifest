@@ -16,4 +16,4 @@ moduleid: com.alcoapps.actionbarextras
 guid: 84008311-4ed7-45ba-b2ea-a4cb5b5bb692
 platform: android
 minsdk: 3.4.0.GA
-architectures: armeabi;armeabi-v7a;x86
+architectures: armeabi;armeabi-v7a;x86;x86_64
